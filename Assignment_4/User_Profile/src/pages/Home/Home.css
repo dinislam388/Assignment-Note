@@ -1,0 +1,40 @@
+.Heading {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(49, 32, 85);
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.userInfo {
+    background: linear-gradient(1deg, #eeaeca, #94bbe9); 
+    padding: 20px;
+    color: rgb(41, 39, 39);
+    height: 90%;
+    border-radius: 20px;
+}
+
+.userInfo:hover {
+    box-shadow: 0px 0px 40px #F8BFBE;
+}
+
+.d-flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    text-align: center;
+    /* background-color: red; */
+    padding: 0 20px;
+}
+
+@media(max-width: 840px) {
+    .d-flex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 567px) {
+    .d-flex {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
